@@ -5,3 +5,10 @@ c:\users\johgro\documents\visual studio 2017\Projects\ConsoleApp6\obj\Debug\Adve
 c:\users\johgro\documents\visual studio 2017\Projects\ConsoleApp6\obj\Debug\AdventOfCode2017.csproj.CoreCompileInputs.cache
 c:\users\johgro\documents\visual studio 2017\Projects\ConsoleApp6\obj\Debug\ConsoleApp6.exe
 c:\users\johgro\documents\visual studio 2017\Projects\ConsoleApp6\obj\Debug\ConsoleApp6.pdb
+C:\Development\projects\AdventOfCode\bin\Debug\ConsoleApp6.exe.config
+C:\Development\projects\AdventOfCode\bin\Debug\ConsoleApp6.exe
+C:\Development\projects\AdventOfCode\bin\Debug\ConsoleApp6.pdb
+C:\Development\projects\AdventOfCode\obj\Debug\AdventOfCode2017.csprojResolveAssemblyReference.cache
+C:\Development\projects\AdventOfCode\obj\Debug\AdventOfCode2017.csproj.CoreCompileInputs.cache
+C:\Development\projects\AdventOfCode\obj\Debug\ConsoleApp6.exe
+C:\Development\projects\AdventOfCode\obj\Debug\ConsoleApp6.pdb
