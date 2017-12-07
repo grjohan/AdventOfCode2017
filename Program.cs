@@ -10,7 +10,8 @@ namespace ConsoleApp6
     {
         static void Main(string[] args)
         {
-            var solutions = new Day5();
+            var solutions = new Day7();
+            Console.WriteLine(solutions.Part1());
             Console.WriteLine(solutions.Part2());
             Console.ReadKey();
         }
