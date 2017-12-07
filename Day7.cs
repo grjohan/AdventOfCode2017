@@ -32,23 +32,13 @@ namespace ConsoleApp6
                                       };
                 towers.Add(tower);
             }
-            foreach (var tower in towers) {
-                if (tower.AdjecentPrograms.Any()) {
-                    if(towers.All(o => !o.AdjecentPrograms.Contains(tower.name)))
-                    {
-                        correctTower = tower.name;
-                        break;
-                    }
-
-                }
-            }
+            correctTower = towers.First(o => o.AdjecentPrograms.Any() && towers.All(p => !p.AdjecentPrograms.Contains(o.name))).name;
             return 2;
 
         }
 
         public int Part2()
         {
-            var correctTowerName = "";
             var file = new FileInfo(@"C:\Development\projects\AdventOfCode\Day7Input.txt");
             var lines = File.ReadAllLines(file.FullName);
             var towers = new List<tower>();
@@ -71,22 +61,9 @@ namespace ConsoleApp6
                             };
                 towers.Add(tower);
             }
-            foreach (var tower in towers)
-            {
-                if (tower.AdjecentPrograms.Any())
-                {
-                    if (towers.All(o => !o.AdjecentPrograms.Contains(tower.name)))
-                    {
-                        correctTowerName = tower.name;
-                        break;
-                    }
-
-                }
-
-            }
-            var correctTower = towers.Single(o => o.name == correctTowerName);
-            this.CalculateSubTowerWeights(correctTower, towers);
-            return this.CorrectWeightThatIsWrong(correctTower, towers, 0);
+            var correctTower = towers.First(o => o.AdjecentPrograms.Any() && towers.All(p => !p.AdjecentPrograms.Contains(o.name)));
+            CalculateSubTowerWeights(correctTower, towers);
+            return CorrectWeightThatIsWrong(correctTower, towers, 0);
         }
 
 
